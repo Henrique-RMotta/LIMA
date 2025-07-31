@@ -1,0 +1,77 @@
+/* style.css */
+
+/* Reset básico */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7fc; /* azul bem claro */
+    color: #1e2a38; /* azul escuro acinzentado */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Cabeçalho */
+#cabecalho h1, #cabecalho h2 {
+    text-align: center;
+    color: #0a3d62; /* azul mais forte */
+    margin-bottom: 10px;
+}
+
+/* Imagem */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #0a3d62;
+}
+
+/* Seções */
+#sobremim, #lista {
+    margin-top: 30px;
+}
+
+/* Títulos de seção */
+#sobremim h2, #lista h2 {
+    color: #1e2a38;
+    border-left: 5px solid #0a3d62;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Lista */
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Hover nos hobbies (opcional, estilo gamer leve) */
+li:hover {
+    color: #0a3d62;
+    cursor: default;
+}
