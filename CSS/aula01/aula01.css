@@ -1,0 +1,18 @@
+/* Comentário */
+p {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-align: center;
+}
+h1 {
+    color: red;
+    font-family: sans-serif;
+}
+h2 {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
