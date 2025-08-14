@@ -1,0 +1,23 @@
+.cabecalho {
+    display: block;
+    text-align: center;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+
+}
+.cabecalho input {
+    border-radius: 8px;
+}
+.cabecalho button {
+    border-radius: 8px;
+}
+.cabecalho img {
+    align-self: auto;
+    width: auto;
+    height: 300px;
+}
+
+.imageminicio img {
+    width: 100%;
+}
