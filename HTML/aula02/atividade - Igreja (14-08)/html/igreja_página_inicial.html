@@ -5,46 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja</title>
     <link rel="shortcut icon" href="/HTML/aula02/atividade - Igreja (14-08)/icons/icon-igreja.png" type="image/x-icon">
-    <link rel="stylesheet" href="/CSS/aula02/style.css">
+    <link rel="stylesheet" href="/CSS/aula02/atividade- igreja (14-08)/css/style.css">
 </head>
 <body>
     <div class="cabecalho">
         <img src="/HTML/aula02/atividade - Igreja (14-08)/images/IGREJA SANTO ANTONIO.png" alt="igreja-santo-antonio">
-        <div class="menu">
-        <button onclick="paginainicial()">Página inicial</button>
-        <button onclick="catequese()">Catequese</button>
-        <button onclick="crisma()">Crisma</button>
-        <button onclick="quemsomos()">Quem somos</button>
-        <input type="search" id="busca" placeholder="Buscar">
+    <div class="menu">
+        <div class="botoes">
+            <button onclick="paginainicial()">Página inicial</button>
+            <button onclick="catequese()">Catequese</button>
+            <button onclick="crisma()">Crisma</button>
+        </div>
+        <div class="inputs">
+            <input type="search" id="busca" placeholder="Buscar">
+        </div>
     </div>
        
     </div>
     <div class="imageminicio">
-        <img src="/HTML/aula02/atividade - Igreja (14-08)/images/igreja-inicio.jpg" alt="imagem igreja">
+        <img src="/HTML/aula02/atividade - Igreja (14-08)/images/igreja-inicio.jpg alt="imagem igreja">
         <h1>Bem vindo a Igreja de Santo Antônio</h1>
     </div>
     <div class="destaques">
         <h1>Destaques</h1>
+        <div class="imagens">
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur officiis perspiciatis porro, maxime officia laudantium, illo quis iure maiores inventore quam necessitatibus dolores fugit laboriosam ut mollitia eius hic cumque.</p>
+        </div>
+        <div class="imagens">
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur officiis perspiciatis porro, maxime officia laudantium, illo quis iure maiores inventore quam necessitatibus dolores fugit laboriosam ut mollitia eius hic cumque.</p>
+        </div>
+        <div class="imagens">
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur officiis perspiciatis porro, maxime officia laudantium, illo quis iure maiores inventore quam necessitatibus dolores fugit laboriosam ut mollitia eius hic cumque.</p>
+        </div>
+        
     </div>
     <div class="feedback">
         <h1>Feedback</h1>
         <p>Por favor, nos de um feedback para a melhora do site</p>
-        <label for="name">Nome:</label>
-        <input type="text" id="name" placeholder="Digite seu Nome">
-        <label for="checkbox">Prefiro não informar</label>
-        <input type="checkbox" id="checkbox">
-        <input type="text" id="feedback" placeholder="Coloque aqui seu feedback">
+        <div class="inputs">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu Nome">
+        </div>
+        <div class="inputs">
+            <label for="checkbox">Prefiro não informar</label>
+            <input type="checkbox" id="checkbox">
+        </div>
+        <div class="inputs">
+            <label for="feedback">Descrição:</label>
+            <input type="text" id="feedback" placeholder="Coloque aqui seu feedback">
+        </div>
+        <div class="botoes">
+            <button onclick="enviar()">Enviar</button>
+        </div>
     </div>
     <div class="Contato">
-        <h1>Endereço e Contato</h1>
-        <p>Contato: </p>
-        <p>19999-2873</p>
-        <p>Email:</p>
-        <p>igreja@catolica.com</p>
-        <p>Endereço:</p>
-        <p>rua casa de jesus</p>
-        <p>Bairro São francisco</p>
-        <p>13456-097</p>
+        <footer>
+            <h1>Endereço e Contato</h1>
+            <p>Contato: </p>
+            <p>19999-2873</p>
+            <p>Email:</p>
+            <p>igreja@catolica.com</p>
+            <p>Endereço:</p>
+            <p>rua casa de jesus</p>
+            <p>Bairro São francisco</p>
+            <p>13456-097</p>
+        </footer>
     </div>
 </body>
 </html>
