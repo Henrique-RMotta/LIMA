@@ -1,24 +1,204 @@
 .cabecalho {
-    display: block;
-    text-align: center;
-    background-color: yellow;
-    justify-content: center;
-    align-items: center;
+    align-items: center;/* centraliza verticalmente*/
+    display: flex;/* serve para deixar os elementos alinhados verticalmente ou horizontalmente*/
+    gap: 100px;
+    height: 100px;
+    width: auto;
+    background-color: #6B8E23;
 
 }
-.cabecalho input {
-    border-radius: 8px;
-}
-.cabecalho button {
-    border-radius: 8px;
-}
 .cabecalho img {
-    align-self: auto;
-    width: auto;
-    height: 300px;
+    display: block;/*ocupa uma linha só*/
+    margin-left: 0;/*remove a margem da esquerda*/
+    margin-right: auto;/*coloca a imagem a esquerda*/
+    max-width: 100%;/*garante que a imagem nao seja maior que o container*/
+    width: 200px;/* define a largura da imagem */
+    height: auto;/*mantem a proporção*/
+}
+
+.menu .botoes {
+    display: flex;
+    justify-content: center;/*alinha horizontalmente*/
+    gap: 100px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu .botoes button {
+    width: 150px;      /* largura do botão */
+    height: 40px;      /* altura do botão */
+    font-size: 16px;   /* tamanho da fonte */
+    padding: 8px 12px; /* espaço interno */
+    border: none;          /* remove a borda */
+    background: transparent; /* deixa sem fundo */
+    cursor: pointer;       /* deixa o cursor em formato de mãozinha */
+    color: black;        /* mantém a cor do texto do elemento pai */
+    background-color: #F5EEDC;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); ;  /*sombra nos botao*/
+    
+}
+
+.menu {
+    flex: 1; /* Faz o menu ocupar todo o espaço ao lado da imagem */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza verticalmente o conteúdo do menu */
+    align-items: center;     /* Centraliza horizontalmente o conteúdo do menu */
+}
+
+.menu .inputs input {
+    border-radius: 12px; 
+    box-shadow:0px 4px 6px rgba(0, 0, 0, 0.3); ;
+}
+
+.imageminicio {
+    position: relative;   /* permite posicionar elementos dentro */
+    text-align: center;   /* centraliza o conteúdo horizontalmente */
+    overflow: hidden; /* esconde o que passar do limite */
+    height: 400px;  
+    
 }
 
 .imageminicio img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* faz a imagem preencher e corta o excesso */
+    display: block;
+}
+
+.imageminicio h1 {
+    position: absolute;   /* coloca o texto sobre a imagem */
+    top: 50%;             /* move o texto 50% para baixo */
+    left: 50%;            /* move o texto 50% para a direita */
+    transform: translate(-50%, -50%); /* centraliza de verdade */
+    color: white;         /* cor do texto */
+    font-size: 36px;      /* tamanho da fonte */
+    font-weight: bold;    /* negrito */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* sombra p/ destacar */
+}
+
+.menu .inputs input {
+    width: 250px;              /* largura */
+    padding: 10px 15px;        /* espaço interno */
+    font-size: 16px;           /* tamanho da letra */
+    border: 1px solid #ccc;    /* borda leve */
+    border-radius: 8px;        /* arredonda */
+    outline: none;             /* remove a borda azul padrão */
+    background-color: #F5EEDC; /* fundo suave */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* leve sombra interna */
+}
+
+.destaques {
+    background-color: #6B8E23;
+    text-align: center;
+    color: white;
+    padding: 40px 20px; /* dá um respiro em volta */
+}
+
+.destaques h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: center; /* centraliza os cards */
+    gap: 20px;               /* espaço entre os cards */
+    flex-wrap: wrap;         /* quebra em telas pequenas */
+}
+
+.destaques .imagens {
+    background-color: #F5EEDC;
+    color: #333;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.destaques .imagens img {
     width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;              
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5EEDC;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column; /* organiza label em cima do input */
+    width: 300px;
+    
+}
+
+.inputs label {
+    margin-bottom: 5px;  /* espaço entre label e input */
+    font-weight: bold;   /* deixa o texto mais destacado */
+    color: #333;         /* cor da letra */
+}
+
+.inputs-desc input{
+    display: flex;
+    flex-direction: column; /* organiza label em cima do input */
+    width: 300px;
+    height: 300px;
+    font-size: 16px;
+}
+
+.Contato  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: auto;
+    height: 50px;
+
+
+}
+.Contato {
+    margin-bottom: auto;
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #6B8E23;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobrenos {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #F5EEDC;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.sobrenos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-left: 0;/*remove a margem da esquerda*/
+    margin-right: auto;/*coloca a imagem a esquerda*/
+    display: block;
     
 }
