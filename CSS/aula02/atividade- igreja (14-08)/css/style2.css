@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5EEDC;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    align-items: center;
+    display: flex;
+    gap: 100px;
+    height: 100px;
+    width: auto;
+    background-color: #6B8E23;
+    padding: 0 20px;
+}
+
+.cabecalho img {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .botoes {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu .botoes button {
+    width: 150px;      /* largura do botão */
+    height: 40px;      /* altura do botão */
+    font-size: 16px;   /* tamanho da fonte */
+    padding: 8px 12px; /* espaço interno */
+    border: none;          /* remove a borda */
+    background: transparent; /* deixa sem fundo */
+    cursor: pointer;       /* deixa o cursor em formato de mãozinha */
+    color: black;        /* mantém a cor do texto do elemento pai */
+    background-color: #F5EEDC;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); ;  /*sombra nos botao*/
+}
+
+.menu .inputs input {
+    border-radius: 12px; 
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    padding: 8px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.inputs label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #F5EEDC;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    outline: none;
+}
+
+
+/* Botão de enviar */
+.form button {
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #6B8E23;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
