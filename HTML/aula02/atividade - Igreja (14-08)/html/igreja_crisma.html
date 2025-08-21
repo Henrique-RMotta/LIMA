@@ -7,19 +7,15 @@
     <title>Igreja-Crisma</title>
 </head>
 <body>
-    <div class="cabecalho">
-        <img src="/HTML/aula02/atividade - Igreja (14-08)/images/IGREJA SANTO ANTONIO.png" alt="igreja-santo-antonio">
+<div class="cabecalho">
     <div class="menu">
+        <img src="/HTML/aula02/atividade - Igreja (14-08)/images/IGREJA SANTO ANTONIO copy.png" alt="igreja-santo-antonio">
         <div class="botoes">
             <button onclick="paginainicial()">Página inicial</button>
             <button onclick="catequese()">Catequese</button>
             <button onclick="crisma()">Crisma</button>
         </div>
-        <div class="inputs">
-            <input type="search" id="busca" placeholder="Buscar">
-        </div>
     </div>
-</div>
 </div>
     <h1>Se inscreva para a proxima turma do Crisma</h1>
     <div class="form">
@@ -47,8 +43,21 @@
             <label for="email">Email:</label>
             <input type="text" placeholder="Digite seu email" id="email">
         </div>
-        <button onclick="submit()">inscrever</button>
+        <button type="submit" onclick="inscrever()">inscrever</button>
     </div>
+    <script>
+        function paginainicial () {
+            setTimeout(() => {
+                window.location.href = "igreja_página_inicial.html";
+            }, 1000);
+            }
+            
+             function catequese () {
+            setTimeout(() => {
+                window.location.href = "igreja_catequese.html";
+            }, 1000);
+            }
+    </script>
 
 
 </body>
