@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igreja-Catequese</title>
+    <link rel="stylesheet" href="../../../../CSS/aula02/atividade- igreja (14-08)/css/style2.css">
+    <title>Igreja-Crisma</title>
 </head>
 <body>
-    <h1>Se inscreva para a proxima turma da catequese</h1>
+<div class="cabecalho">
+    <div class="menu">
+        <img src="/HTML/aula02/atividade - Igreja (14-08)/images/IGREJA SANTO ANTONIO copy.png" alt="igreja-santo-antonio">
+        <div class="botoes">
+            <button onclick="paginainicial()">Página inicial</button>
+            <button onclick="catequese()">Catequese</button>
+            <button onclick="crisma()">Crisma</button>
+        </div>
+    </div>
+</div>
+    <h1>Se inscreva para a proxima turma da Catequese</h1>
     <div class="form">
         <div class="inputs">
             <label for="name">Nome:</label>
@@ -32,9 +43,23 @@
             <label for="email">Email:</label>
             <input type="text" placeholder="Digite seu email" id="email">
         </div>
+        <button type="submit" onclick="inscrever()">inscrever</button>
     </div>
-    <h1>Descrição</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi perferendis officiis, unde vel inventore laboriosam recusandae id vero corporis consequuntur libero, officia quos cupiditate ipsum, dicta reiciendis nostrum alias.</p>
-    <h1>Destaques de outras turmas</h1>
+    <script>
+        function paginainicial () {
+            setTimeout(() => {
+                window.location.href = "igreja_página_inicial.html";
+            }, 1000);
+            }
+
+            function crisma () {
+            setTimeout(() => {
+                window.location.href = "igreja_crisma.html";
+            }, 1000);
+            }
+
+    </script>
+
+
 </body>
 </html>
