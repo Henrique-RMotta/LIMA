@@ -1,0 +1,63 @@
+@font-face{
+    font-family: 'PressStart2P';
+    src: url('./PressStart2P-Regular.ttf') format('truetype');
+}
+body {
+    background-color: #3170DE;
+}
+h1  {
+    margin-left: 170px;
+    margin-right: 170px;
+    text-align: center ;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    font-family: 'PressStart2P';
+    font-size: 25px;
+    height: 30px;
+    padding: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .card {
+    height: 550px;
+    background-color: black;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+img {
+    max-height: 200px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+p {
+    font-family: 'PressStart2P';
+    word-spacing: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    font-family: 'PressStart2P';
+}
+
+.card:hover {
+    box-shadow: 0px 4px 8px rgb(244, 244, 244);
+}
