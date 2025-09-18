@@ -1,0 +1,138 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+body{
+    background-color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: #6b8e23;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    outline-color: gold;
+    outline-width: 5px;
+    outline-style: solid;
+    margin: 0;
+    padding: 0;
+}
+
+header button {
+    background-color: #6b8e23;
+    border: none;
+    font-family: "Inter";
+    font-size: 16px;
+}
+
+header input{
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 16px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: row;       /* imagem à esquerda, texto à direita */
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #536925;
+    height: 250px;
+    padding: 20px 40px;
+    gap: 40px;                 /* espaço entre imagem e texto */
+    font-family: "Inter";
+}
+
+.descricao aside img {
+    height: 250px;
+    width: 300px
+}
+.produtos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #6b8e23;
+    height: 350px;
+    position: relative;
+    gap: 20px ;
+}
+.produtos h1 {
+    position: absolute;
+    top: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: "Inter";
+}
+.cards {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #536925;
+    height: 250px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 5px gold;
+}
+
+.cards :hover {
+    box-shadow: 0px 5px 5px 5px white;
+}
+
+.card img {
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+}
+footer {
+    background-color: #6b8e23;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    text-align: center;
+}
+
+.compra-card {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #536925;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 5px gold;
+}
+.compra-card img{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
+.compra-card button {
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #6b8e23;
+}
